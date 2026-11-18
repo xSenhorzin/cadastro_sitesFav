@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #000000;
+}
+
+/* MENU */
+
+.menu{
+    background-color: rgb(25, 24, 24);
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 20px;
+    background-color: Green;
+    border-radius: 5px;
+}
+
+.menu a:hover{
+    transition: 0.5s;
+    color: white;
+    background-color: DarkGreen;
+}
+
+#titulo{
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: block;
+    flex: 1;
+}
+
+/* TITULO */
+
+h1{
+    background-color: rgb(25, 24, 24);
+    color: #fefcfc;
+    text-align: center;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTEUDO */
+
+.conteudo{
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* SITE */
+
+.site{
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* NOME */
+
+.site h2{
+    color: black;
+    margin-bottom: 15px;
+}
+
+/* INFORMACOES */
+
+.site p{
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* BOTAO */
+
+.site button{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.site button:hover{
+    background-color: darkgreen;
+    transition: 0.1s;
+    border: 2px solid black;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 800px){
+
+    .conteudo{
+        width: 95%;
+        grid-template-columns: 1fr;
+    }
+
+    .menu{
+        padding: 0 15px;
+    }
+
+    .site{
+        padding: 15px;
+    }
+}
